@@ -1,9 +1,11 @@
 # Versions tested in October 2026 with Python 3.14; they need Python 3.12 or newer.
 # Install with: pip install -r requirements.txt
+# torch is a range, not an exact version, so that a hardware-specific 2.14 build
+# that is already installed (for example AMD ROCm 2.14.0) is kept. Tested with 2.14.1 from PyPI.
 gymnasium==1.4.0
 ipython==9.17.1
 matplotlib==3.11.2
 notebook==7.6.3
 numpy==2.5.4
 pandas==3.0.6
-torch==2.14.1
+torch>=2.14,<2.15
